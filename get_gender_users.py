@@ -1,4 +1,4 @@
-import get_data
+import json
 
 def get_gender_users(data:dict) -> list:
     """

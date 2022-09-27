@@ -1,4 +1,4 @@
-import get_data
+import json
 
 def get_email(data:dict) -> list:
     """
