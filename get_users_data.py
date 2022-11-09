@@ -12,3 +12,8 @@ def get_users_data(data:dict) -> list:
     Returns:
         list: users data list
     """
+    answer = []
+    for i in data['results']:answer.append({'first_name':i['name']['first'],'last_name':i['name']['last'],'phone_number':i['phone']})
+    return answer
+f = open('randomuser_data.json').read()
+data = json.loads(f)
