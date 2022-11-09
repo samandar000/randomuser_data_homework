@@ -10,7 +10,7 @@ def get_count_users(data:dict) -> int:
         int: number of users
     """
     
-    k = (list(data['results']))
+    k = len(list(data['results']))
     return k
 f = open('randomuser_data.json').read()
 data = json.loads(f)
